@@ -1,0 +1,119 @@
+:root {
+  --smaller-font-size: 1.2rem;
+  --small-font-size: 1.4rem;
+  --default-font-size: 1.6rem;
+  --large-font-size: 1.8rem;
+  --color-white: #fff;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 3);
+  --shadow-medium: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-1); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 1.2rem; }
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  80% {
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  80% {
+    transform: translateY(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.heading-primary {
+  color: var(--color-white);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 3.5rem;
+    animation: moveDown 1.2s ease-in; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1.5rem;
+    animation: moveUp 1.2s ease-in; }
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(64, 64, 64, 0.8)), url(../img/bridge-dark.jpg);
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.navbar {
+  position: fixed;
+  height: 6rem;
+  z-index: 100;
+  width: 100%;
+  top: 2rem;
+  left: 0; }
+  .navbar__nav-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navbar__nav-link:link, .navbar__nav-link:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: var(--line);
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-white) 50%);
+    background-size: 300%;
+    transition: all 0.55s; }
+    .navbar__nav-link:link:hover, .navbar__nav-link:link:active, .navbar__nav-link:visited:hover, .navbar__nav-link:visited:active {
+      background-position: 100%;
+      color: var(--color-grey-dark-2);
+      transform: translateY(1rem);
+      box-shadow: var(--shadow-medium); }

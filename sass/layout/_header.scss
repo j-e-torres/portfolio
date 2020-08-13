@@ -6,14 +6,37 @@
       rgba(64, 64, 64, 0.8)
     ),
     url(../img/bridge-dark.jpg);
-  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  // -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  // clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   background-size: cover;
   background-position: center;
-  color: #fff;
   position: relative;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &__social-media {
+    display: flex;
+    animation: moveUp 1.5s ease-in;
+
+    justify-content: center;
+    align-items: center;
+
+    &__social-media-link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: var(--color-grey-light-1);
+      }
+    }
+
+    & svg {
+      height: 4rem;
+      width: 4rem;
+      fill: var(--color-grey-light-1);
+      margin-right: 2rem;
+    }
+  }
 }

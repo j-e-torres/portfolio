@@ -27,8 +27,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  padding: 1.2rem; }
+  box-sizing: border-box; }
 
 @keyframes moveDown {
   0% {
@@ -74,18 +73,38 @@ body {
     letter-spacing: 1.5rem;
     animation: moveUp 1.2s ease-in; }
 
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
 .header {
   height: 90vh;
   background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(64, 64, 64, 0.8)), url(../img/bridge-dark.jpg);
-  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   background-size: cover;
   background-position: center;
-  color: #fff;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .header__social-media {
+    display: flex;
+    animation: moveUp 1.5s ease-in;
+    justify-content: center;
+    align-items: center; }
+    .header__social-media__social-media-link:link, .header__social-media__social-media-link:visited {
+      text-decoration: none;
+      color: var(--color-grey-light-1); }
+    .header__social-media svg {
+      height: 4rem;
+      width: 4rem;
+      fill: var(--color-grey-light-1);
+      margin-right: 2rem; }
 
 .navbar {
   position: fixed;
@@ -93,7 +112,8 @@ body {
   z-index: 100;
   width: 100%;
   top: 2rem;
-  left: 0; }
+  left: 0;
+  animation: moveDown 1s ease-out; }
   .navbar__nav-list {
     width: 100%;
     list-style: none;

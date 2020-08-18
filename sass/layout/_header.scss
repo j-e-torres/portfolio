@@ -35,11 +35,16 @@
       }
     }
 
-    & svg {
+    svg {
       height: 4rem;
       width: 4rem;
       fill: var(--color-grey-light-1);
       margin-right: 2rem;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
     }
   }
 }

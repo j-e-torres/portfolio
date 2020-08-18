@@ -172,7 +172,10 @@ body {
       height: 4rem;
       width: 4rem;
       fill: var(--color-grey-light-1);
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      transition: all 0.4s; }
+      .header__social-media svg:hover {
+        transform: translateY(-3px); }
 
 .navbar {
   position: absolute;

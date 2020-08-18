@@ -10,14 +10,21 @@
     margin-bottom: var(--margin-bottom-medium);
     flex: 0 0 25%;
     position: relative;
+    opacity: 0.78;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     // flex-wrap: wrap;
+    transition: all 0.4s;
 
     &:not(:last-child) {
       // margin-right: 15rem;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      opacity: 1;
     }
   }
 
@@ -61,6 +68,13 @@
           rgba(0, 0, 0, 0.3)
         ),
         url(../img/othertech.jpg);
+
+      // background-image: linear-gradient(
+      //     to right bottom,
+      //     rgba(255, 255, 255, 0.3),
+      //     rgba(255, 255, 255, 0.3)
+      //   ),
+      //   url(../img/othertech.jpg);
     }
   }
 

@@ -1,0 +1,115 @@
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  // align-items: stretch;
+
+  &__card {
+    // padding: 3rem 10rem;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-medium);
+    margin-bottom: var(--margin-bottom-medium);
+    flex: 0 0 25%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // flex-wrap: wrap;
+
+    &:not(:last-child) {
+      // margin-right: 15rem;
+    }
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 21rem;
+    width: 100%;
+    // background-blend-mode: screen;
+
+    &--1 {
+      // background-image: linear-gradient(to right bottom, #348f50, #56b4d3),
+      //   url(../img/frontend-2.jpg);
+
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(../img/frontend-2.jpg);
+    }
+
+    &--2 {
+      // background-image: linear-gradient(to right bottom, #348f50, #56b4d3),
+      //   url(../img/backend.jpg);
+
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(../img/backend.jpg);
+    }
+
+    &--3 {
+      // background-image: linear-gradient(to right bottom, #348f50, #56b4d3),
+      //   url(../img/othertech.jpg);
+
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(../img/othertech.jpg);
+    }
+  }
+
+  &__card-heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    // color: var(--color-grey-dark-2);
+    color: var(--color-grey-light-1);
+
+    position: absolute;
+    // text-align: center;
+    top: 14rem;
+    // right: 5rem;
+    left: 1rem;
+    z-index: 5;
+    width: 75%;
+  }
+
+  &__card-heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      );
+    }
+  }
+
+  &__card-details {
+    padding: 1rem;
+
+    ul {
+      list-style: none;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--color-grey-dark-2);
+
+      li {
+        padding: 0.75rem;
+
+        &:not(:last-child) {
+          border-bottom: var(--line-2);
+        }
+      }
+    }
+  }
+}

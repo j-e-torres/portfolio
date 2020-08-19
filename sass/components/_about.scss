@@ -1,0 +1,42 @@
+.about {
+  padding: 2rem;
+  display: flex;
+
+  &__profile {
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-medium);
+
+    flex: 0 0 60%;
+    display: flex;
+  }
+
+  &__figure {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    // position: relative;
+    margin-right: 5rem;
+  }
+
+  &__photo {
+    // height: 100%;
+    // width: 50%;
+    transform: translateX(-30%);
+  }
+
+  &__caption {
+  }
+
+  &__description {
+    color: var(--color-grey-light-1);
+    font-size: 2rem;
+  }
+
+  &__description-text {
+    &:not(:last-child) {
+      margin-bottom: var(--margin-bottom-small);
+    }
+  }
+}

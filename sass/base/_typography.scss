@@ -45,11 +45,12 @@ body {
 
   &--main {
     padding: 1.2rem 1.5rem;
+    box-shadow: var(--shadow-light);
 
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    );
+    // background-image: linear-gradient(
+    //   to right bottom,
+    //   rgba(255, 255, 255, 0.1),
+    //   rgba(255, 255, 255, 0.1)
+    // );
   }
 }

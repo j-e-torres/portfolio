@@ -16,9 +16,9 @@
 
     transition: all 0.4s;
 
-    &:not(:last-child) {
-      // margin-right: 15rem;
-    }
+    // &:not(:last-child) {
+    //   // margin-right: 15rem;
+    // }
 
     &:hover {
       transform: scale(1.05);
@@ -30,12 +30,8 @@
     background-size: cover;
     height: 21rem;
     width: 100%;
-    // background-blend-mode: screen;
 
     &--1 {
-      // background-image: linear-gradient(to right bottom, #348f50, #56b4d3),
-      //   url(../img/frontend-2.jpg);
-
       background-image: linear-gradient(
           to right bottom,
           rgba(0, 0, 0, 0.3),
@@ -45,9 +41,6 @@
     }
 
     &--2 {
-      // background-image: linear-gradient(to right bottom, #348f50, #56b4d3),
-      //   url(../img/backend.jpg);
-
       background-image: linear-gradient(
           to right bottom,
           rgba(0, 0, 0, 0.3),
@@ -57,22 +50,12 @@
     }
 
     &--3 {
-      // background-image: linear-gradient(to right bottom, #348f50, #56b4d3),
-      //   url(../img/othertech.jpg);
-
       background-image: linear-gradient(
           to right bottom,
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.3)
         ),
         url(../img/othertech.jpg);
-
-      // background-image: linear-gradient(
-      //     to right bottom,
-      //     rgba(255, 255, 255, 0.3),
-      //     rgba(255, 255, 255, 0.3)
-      //   ),
-      //   url(../img/othertech.jpg);
     }
   }
 

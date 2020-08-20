@@ -71,8 +71,8 @@
     }
   }
 
-  &__reviews {
-  }
+  // &__reviews {
+  // }
 
   &__review {
     color: var(--color-grey-light-1);
@@ -83,9 +83,9 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   }
 
-  &__review-text {
-    // font-weight: 400;
-  }
+  // &__review-text {
+  //   // font-weight: 400;
+  // }
 
   &__review-info {
     transform: skewX(10deg);

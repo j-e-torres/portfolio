@@ -3,7 +3,7 @@
   border: none;
   background-color: inherit;
   font-size: inherit;
-  font-weight: 300;
+  font-weight: 100;
   display: block;
   border-bottom: var(--line-3);
   // width: 100%;
@@ -13,12 +13,10 @@
 
   & span {
     margin-left: 8px;
-    transition: margin-left 0.2s;
+    transition: margin-left 0.5s;
   }
 
   &:hover {
-    // background-color: rgba(0, 0, 0, 0.5);
-    // color: var(--color-grey-light-1);
     border-bottom: var(--line-4);
 
     & span {

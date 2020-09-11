@@ -152,15 +152,6 @@ body {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); }
   .card-container__card-details {
     padding: 1rem; }
-    .card-container__card-details ul {
-      list-style: none;
-      font-size: 2rem;
-      font-weight: 300;
-      color: var(--color-grey-dark-2); }
-      .card-container__card-details ul li {
-        padding: 0.75rem; }
-        .card-container__card-details ul li:not(:last-child) {
-          border-bottom: var(--line-2); }
 
 .bg-video {
   position: absolute;
@@ -271,23 +262,56 @@ body {
   .project:not(:last-child) {
     margin-bottom: var(--margin-bottom-medium); }
   .project__details {
+    color: var(--color-grey-dark-1);
     display: flex;
     justify-content: center; }
   .project__figure {
     overflow: hidden;
-    flex: 0 0 40%;
     border-radius: 3px;
-    margin-right: 4rem; }
+    margin-right: 4rem;
+    flex: 0 0 40%; }
+    .project__figure--demo {
+      height: 30rem;
+      width: 30rem; }
   .project__screenshot {
     width: 100%;
     height: 100%; }
+  .project__demo-video {
+    height: 100%;
+    width: 100%; }
   .project__description {
     flex: 0 0 40%;
     font-size: 1.8rem;
     font-weight: 300;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center; }
+
+.global-list {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-grey-dark-2); }
+  .global-list__card-li {
+    padding: 0.75rem; }
+    .global-list__card-li:not(:last-child) {
+      border-bottom: var(--line-2); }
+  .global-list__link {
+    text-decoration: none;
+    display: inline-block; }
+    .global-list__link--project:visited, .global-list__link--project:link {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: var(--color-grey-dark-1);
+      border-bottom: 1px solid currentColor; }
+    .global-list__link--project:hover, .global-list__link--project:active {
+      color: var(--color-grey-dark-2); }
+      .global-list__link--project:hover span, .global-list__link--project:active span {
+        margin-left: 8px; }
+    .global-list__link--project span {
+      margin-left: 1px;
+      transition: margin-left 0.2s; }
 
 .header {
   height: 100vh;

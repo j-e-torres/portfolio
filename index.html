@@ -224,13 +224,13 @@
             </h4>
 
             <div class="card-container__card-details">
-              <ul>
-                <li>JavaScript</li>
-                <li>HTML 5</li>
-                <li>CSS 3</li>
-                <li>React.js</li>
-                <li>Redux.js</li>
-                <li>Sass</li>
+              <ul class="global-list">
+                <li class="global-list__card-li">JavaScript</li>
+                <li class="global-list__card-li">HTML 5</li>
+                <li class="global-list__card-li">CSS 3</li>
+                <li class="global-list__card-li">React.js</li>
+                <li class="global-list__card-li">Redux.js</li>
+                <li class="global-list__card-li">Sass</li>
               </ul>
             </div>
           </div>
@@ -248,13 +248,13 @@
             </h4>
 
             <div class="card-container__card-details">
-              <ul>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>PostgreSQL</li>
-                <li>Sequelize.js</li>
-                <li>MongoDB</li>
-                <li>Mongoose.js</li>
+              <ul class="global-list">
+                <li class="global-list__card-li">Express.js</li>
+                <li class="global-list__card-li">PostgreSQL</li>
+                <li class="global-list__card-li">Sequelize.js</li>
+                <li class="global-list__card-li">MongoDB</li>
+                <li class="global-list__card-li">Mongoose.js</li>
+                <li class="global-list__card-li">Node.js</li>
               </ul>
             </div>
           </div>
@@ -272,13 +272,13 @@
             </h4>
 
             <div class="card-container__card-details">
-              <ul>
-                <li>Jest</li>
-                <li>Mocha</li>
-                <li>Chai</li>
-                <li>Git</li>
-                <li>Heroku</li>
-                <li>React-Native</li>
+              <ul class="global-list">
+                <li class="global-list__card-li">Jest</li>
+                <li class="global-list__card-li">Mocha</li>
+                <li class="global-list__card-li">Chai</li>
+                <li class="global-list__card-li">Git</li>
+                <li class="global-list__card-li">Heroku</li>
+                <li class="global-list__card-li">React-Native</li>
               </ul>
             </div>
           </div>
@@ -299,31 +299,40 @@
             </div>
 
             <div class="project__details">
-              <figure class="project__figure">
+              <figure class="project__figure project__figure--screenshot">
                 <img
                   src="img/betterBuildWins.png"
                   alt="betterBuildWins"
                   class="project__screenshot"
                 />
-                <!-- <figcation class="project__caption">betterBuildWins</figcation> -->
               </figure>
 
               <div class="project__description">
-                League of Legends tool where you can customize parameters and
-                test out different combinations of Champions and Items to see
-                what stats you gain. This includes a Champion stats breakdown
-                similar to what you see in game. You can also view your
-                calculated Auto Attack DPS and Effective HP. The website is
-                still a work in progress.
+                <p>
+                  League of Legends tool where you can customize parameters and
+                  test out different combinations of Champions and Items to see
+                  what stats you gain. This includes a Champion stats breakdown
+                  similar to what you see in game. You can also view your
+                  calculated Auto Attack DPS and Effective HP. The website is
+                  still a work in progress.
+                </p>
 
                 <div class="project__info">
-                  <ul class="project__links">
-                    <li>
-                      <a href="#" class="project__link">Github</a>
+                  <ul class="global-list">
+                    <li class="global-list__project-li">
+                      <a
+                        href="https://github.com/j-e-torres/betterBuildWins"
+                        class="global-list__link global-list__link--project"
+                        target="_blank"
+                        >Github <span>&rarr;</span></a
+                      >
                     </li>
-                    <li>
-                      <a href="#" class="project__link"
-                        >betterBuildWins &rarr;</a
+                    <li class="global-list__project-li">
+                      <a
+                        href="https://juanstackathon.herokuapp.com/#/"
+                        class="global-list__link global-list__link--project"
+                        target="_blank"
+                        >betterBuildWins <span>&rarr;</span></a
                       >
                     </li>
                   </ul>
@@ -340,13 +349,14 @@
             </div>
 
             <div class="project__details">
-              <figure class="project__figure">
-                <img
-                  src="img/betterBuildWins.png"
-                  alt="betterBuildWins"
-                  class="project__screenshot"
-                />
-                <!-- <figcation class="project__caption">betterBuildWins</figcation> -->
+              <figure class="project__figure project__figure--demo">
+                <video class="project__demo-video" controls muted>
+                  <source src="img/listThisDemo.webm" type="video/mp4" />
+
+                  <source src="img/listThisDemo.webm" type="video/webm" />
+
+                  Your browser is not supported!
+                </video>
               </figure>
 
               <div class="project__description">
@@ -357,12 +367,20 @@
                 have a hard time coordinating grocery needs!
 
                 <div class="project__info">
-                  <ul class="project__links">
-                    <li>
-                      <a href="#" class="project__link">Github</a>
+                  <ul class="global-list">
+                    <li class="global-list__project-li">
+                      <a
+                        href="#"
+                        class="global-list__link global-list__link--project"
+                        >Github <span>&rarr;</span></a
+                      >
                     </li>
-                    <li>
-                      <a href="#" class="project__link">ListThis &rarr;</a>
+                    <li class="global-list__project-li">
+                      <a
+                        href="#"
+                        class="global-list__link global-list__link--project"
+                        >ListThis <span>&rarr;</span></a
+                      >
                     </li>
                   </ul>
 

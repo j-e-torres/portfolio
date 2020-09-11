@@ -278,7 +278,10 @@ body {
     height: 100%; }
   .project__demo-video {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    outline: none; }
+    .project__demo-video:focus {
+      border: 1px solid var(--color-grey-dark-1); }
   .project__description {
     flex: 0 0 40%;
     font-size: 1.8rem;

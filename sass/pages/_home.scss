@@ -19,14 +19,13 @@
 
 .section-projects {
   padding: 5rem 0;
-  // height: 100vh;
   background-color: var(--color-grey-dark-1-2);
-
-  // opacity: 0.8;
 }
 
-// .section-education {
-// }
+.section-experience {
+  padding: 5rem 0;
 
-// .section-experience {
-// }
+  height: 100vh;
+  background-color: var(--color-grey-light-4);
+  // background-color: rgba(255, 255, 255, 1);
+}

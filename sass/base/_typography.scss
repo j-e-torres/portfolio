@@ -46,6 +46,7 @@ body {
   &--main {
     padding: 1.2rem 1.5rem;
     box-shadow: var(--shadow-light);
+    border-radius: 3px;
 
     &--1 {
       color: var(--color-grey-dark-1);
@@ -67,4 +68,7 @@ body {
 }
 
 .heading-quaternary {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--color-grey-light-1);
 }

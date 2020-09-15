@@ -11,18 +11,40 @@
 
     & li {
       border-left: 2px solid var(--color-grey-dark-3);
-      padding: 0 2rem;
+      padding: 1rem 2rem;
 
       &::before {
         content: '';
-        height: 0.8rem;
-        width: 0.8rem;
+        height: 1rem;
+        width: 1rem;
         border-radius: 50%;
         border: 2px solid var(--color-grey-dark-1-2);
         background-color: var(--color-grey-light-1);
         position: absolute;
-        left: -0.5%;
-        margin-top: 0.9rem;
+        left: -0.75%;
+        margin-top: 2.5rem;
+      }
+
+      & div {
+        background-color: var(--color-grey-dark-1-2);
+        padding: 1.5rem;
+        border-radius: 3px;
+
+        display: flex;
+        flex-direction: column;
+
+        & span {
+          display: block;
+          font-size: 1.1rem;
+        }
+
+        & p {
+          font-size: 1.4rem;
+        }
+
+        & *:not(:last-child) {
+          margin-bottom: var(--margin-bottom-smaller);
+        }
       }
     }
   }

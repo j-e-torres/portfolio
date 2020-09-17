@@ -1,5 +1,6 @@
 :root {
   --default-font-size: 1.6rem;
+  --social-media-linkedin-blue: #0077b5;
   --margin-bottom-smaller: 1rem;
   --margin-bottom-small: 1.5rem;
   --margin-bottom-medium: 4rem;
@@ -409,8 +410,7 @@ body {
       align-self: center; }
 
 .btn, .btn:link, .btn:visited {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: var(--color-grey-dark-1);
+  background-color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   padding: 1.2rem 4rem;
   border-radius: 1rem;
@@ -418,13 +418,55 @@ body {
   font-size: 1.8rem;
   border: none;
   cursor: pointer;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  width: 30%; }
   .btn:not(:last-child), .btn:link:not(:last-child), .btn:visited:not(:last-child) {
     margin-bottom: var(--margin-bottom-small); }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.8);
   transform: translateX(3px); }
+
+.btn__linkedin--blue, .btn__linkedin--blue:link, .btn__linkedin--blue:visited {
+  background-color: var(--social-media-linkedin-blue);
+  color: var(--color--grey-light-1); }
+
+.btn__linkedin--blue span {
+  color: var(--social-media-linkedin-blue);
+  background-color: #fff;
+  border-radius: 3px;
+  margin-left: 3px;
+  padding: 0rem 0.4rem; }
+
+.btn__github--grey, .btn__github--grey:link, .btn__github--grey:visited {
+  color: var(--color-grey-dark-1);
+  display: flex;
+  align-items: center; }
+  .btn__github--grey span, .btn__github--grey:link span, .btn__github--grey:visited span {
+    display: flex;
+    align-items: center; }
+
+.social-media {
+  display: flex;
+  animation: moveUp 1.5s ease-in;
+  justify-content: center;
+  align-items: center; }
+  .social-media__link:link, .social-media__link:visited {
+    text-decoration: none; }
+  .social-media__icon {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    transition: all 0.4s; }
+    .social-media__icon:hover {
+      transform: translateY(-3px); }
+    .social-media__icon--default {
+      fill: var(--color-grey-light-1); }
+    .social-media__icon--linkedin {
+      fill: var(--social-media-linkedin-blue); }
+    .social-media__icon--github--btn {
+      height: 1.8rem;
+      width: 1.8rem;
+      margin-right: 0.75rem; }
 
 .header {
   height: 100vh;
@@ -437,22 +479,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .header__social-media {
-    display: flex;
-    animation: moveUp 1.5s ease-in;
-    justify-content: center;
-    align-items: center; }
-    .header__social-media__social-media-link:link, .header__social-media__social-media-link:visited {
-      text-decoration: none;
-      color: var(--color-grey-light-1); }
-    .header__social-media svg {
-      height: 4rem;
-      width: 4rem;
-      fill: var(--color-grey-light-1);
-      margin-right: 2rem;
-      transition: all 0.4s; }
-      .header__social-media svg:hover {
-        transform: translateY(-3px); }
 
 .navbar {
   position: absolute;
@@ -488,21 +514,25 @@ body {
 
 .footer {
   padding: 5rem;
-  height: 50vh;
   background-color: var(--color-grey-dark-1);
   color: var(--color-grey-light-1);
   display: flex;
-  justify-content: center; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
   .footer__buttons, .footer__text {
-    flex: 0 0 40%; }
+    flex: 0 0 40%;
+    padding: 2rem; }
   .footer__text {
     font-size: 2.2rem;
-    font-weight: 100;
-    color: var(--color-grey-light-1); }
+    font-weight: 300;
+    color: var(--color-grey-light-3); }
   .footer__buttons {
     display: flex;
     flex-direction: column;
-    align-items: stretch; }
+    align-items: center; }
+  .footer__copyright {
+    flex: 0 0 100%;
+    order: 1; }
 
 .section-about {
   position: relative;

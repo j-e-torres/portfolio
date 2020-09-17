@@ -1,26 +1,32 @@
 .footer {
   padding: 5rem;
-  height: 50vh;
   background-color: var(--color-grey-dark-1);
   color: var(--color-grey-light-1);
 
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 
   &__buttons,
   &__text {
     flex: 0 0 40%;
+    padding: 2rem;
   }
 
   &__text {
     font-size: 2.2rem;
-    font-weight: 100;
-    color: var(--color-grey-light-1);
+    font-weight: 300;
+    color: var(--color-grey-light-3);
   }
 
   &__buttons {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+  }
+
+  &__copyright {
+    flex: 0 0 100%;
+    order: 1;
   }
 }

@@ -16,32 +16,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &__social-media {
-    display: flex;
-    animation: moveUp 1.5s ease-in;
-
-    justify-content: center;
-    align-items: center;
-
-    &__social-media-link {
-      &:link,
-      &:visited {
-        text-decoration: none;
-        color: var(--color-grey-light-1);
-      }
-    }
-
-    svg {
-      height: 4rem;
-      width: 4rem;
-      fill: var(--color-grey-light-1);
-      margin-right: 2rem;
-      transition: all 0.4s;
-
-      &:hover {
-        transform: translateY(-3px);
-      }
-    }
-  }
 }

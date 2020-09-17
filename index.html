@@ -56,13 +56,13 @@
         </h1>
       </div>
 
-      <div class="header__social-media">
+      <div class="social-media">
         <a
           href="https://github.com/j-e-torres"
           target="_blank"
-          class="header__social-media-link"
+          class="social-media__link"
         >
-          <svg class="header__social-media-icon-github">
+          <svg class="social-media__icon social-media__icon--default">
             <use xlink:href="img/sprite.svg#icon-github"></use>
           </svg>
         </a>
@@ -70,9 +70,9 @@
         <a
           href="https://www.linkedin.com/in/juan-torres-w2w2/"
           target="_blank"
-          class="header__social-media-link"
+          class="social-media__link"
         >
-          <svg class="header__social-media-icon-linkedin">
+          <svg class="social-media__icon social-media__icon--default">
             <use xlink:href="img/sprite.svg#icon-linkedin"></use>
           </svg>
         </a>
@@ -420,14 +420,31 @@
         <p class="footer__text">
           Thank you for visiting my page. To view more information about my work
           history, experiences, and skills, feel free to visit my Linkedin or
-          Github.
+          GitHub.
         </p>
 
         <div class="footer__buttons">
-          <a href="#" class="btn">Linkedin</a>
+          <a href="#" class="btn btn__linkedin--blue">Linked<span>in</span></a>
 
-          <a href="#" class="btn">Github</a>
+          <a href="#" class="btn btn__github--grey">
+            <span>
+              <svg class="social-media__icon social-media__icon--github--btn">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+            </span>
+            GitHub</a
+          >
         </div>
+
+        <p class="footer__copyright">
+          Built my <a href="#" class="footer__link">Jonas Schmedtmann</a> for
+          his online course
+          <a href="#" class="footer__link">Advanced CSS and Sass</a> Copyright
+          &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage
+          for both personal and commercial use, but NOT to claim it as your own
+          design. A credit to the original author, Jonas Schmedtmann, is highly
+          appreciated!
+        </p>
       </footer>
 
       <!-- <section class="section-education">

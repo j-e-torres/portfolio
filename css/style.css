@@ -368,49 +368,8 @@ body {
       margin-left: 1px;
       transition: margin-left 0.2s; }
 
-.experience {
-  display: flex;
-  justify-content: space-evenly; }
-  .experience__education, .experience__history {
-    flex: 0 0 40%; }
-
-.education {
-  display: flex;
-  justify-content: space-evenly; }
-  .education__block {
-    flex: 0 0 40%;
-    background-color: var(--color-grey-dark-3);
-    padding: 1.5rem;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column; }
-  .education__figure {
-    flex: 0 0 40%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; }
-  .education__img {
-    height: 100%; }
-  .education__details {
-    padding: 1rem;
-    border-radius: 3px;
-    background-color: var(--color-grey-dark-1-2);
-    color: var(--color-grey-light-1);
-    font-weight: 300;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .education__text {
-    font-size: 1.8rem; }
-    .education__text:not(:last-child) {
-      margin-bottom: var(--margin-bottom-smaller); }
-    .education__text--small {
-      font-size: 1.2rem;
-      align-self: center; }
-
 .btn, .btn:link, .btn:visited {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   padding: 1.2rem 4rem;
   border-radius: 1rem;
@@ -428,7 +387,9 @@ body {
 
 .btn__linkedin--blue, .btn__linkedin--blue:link, .btn__linkedin--blue:visited {
   background-color: var(--social-media-linkedin-blue);
-  color: var(--color--grey-light-1); }
+  color: var(--color--grey-light-1);
+  display: flex;
+  align-items: center; }
 
 .btn__linkedin--blue span {
   color: var(--social-media-linkedin-blue);
@@ -529,10 +490,23 @@ body {
   .footer__buttons {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: flex-end; }
   .footer__copyright {
     flex: 0 0 100%;
-    order: 1; }
+    order: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--color-grey-light-4);
+    margin-top: 5rem; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: var(--color-grey-light-1);
+    border-bottom: 1px solid var(--color-grey-light-1);
+    display: inline-block;
+    transition: all 0.2s;
+    padding: 0 1rem; }
 
 .section-about {
   position: relative;

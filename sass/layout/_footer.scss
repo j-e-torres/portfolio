@@ -7,24 +7,29 @@
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: 1024px) {
+    padding: 2rem;
+  }
+
   &__box {
     display: flex;
-    justify-content: center;
+    align-items: center;
   }
 
   &__buttons,
   &__text {
-    flex: 0 0 40%;
     padding: 2rem;
   }
 
   &__text {
+    flex: 0 0 60%;
     font-size: 2.2rem;
     font-weight: 300;
     color: var(--color-grey-light-3);
   }
 
   &__buttons {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

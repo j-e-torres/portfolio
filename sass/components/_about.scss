@@ -126,11 +126,15 @@
 
   &__review-text {
     // font-weight: 400;
-    transform: skewX(-20deg);
+    transform: skewX(-10deg);
+
+    @media only screen and (max-width: 900px) {
+      transform: skewX(-20deg);
+    }
   }
 
   &__review-info {
-    transform: skewX(-10deg);
+    transform: skewX(10deg);
 
     display: flex;
     justify-content: space-around;
@@ -138,6 +142,7 @@
 
     @media only screen and (max-width: 900px) {
       justify-content: center;
+      transform: skewX(-10deg);
     }
   }
 

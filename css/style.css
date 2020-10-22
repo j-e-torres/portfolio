@@ -633,6 +633,9 @@ body {
     font-size: 2.2rem;
     font-weight: 300;
     color: var(--color-grey-light-3); }
+    @media only screen and (max-width: 475px) {
+      .footer__text {
+        font-size: 1.6rem; } }
   .footer__buttons {
     flex: 1;
     display: flex;

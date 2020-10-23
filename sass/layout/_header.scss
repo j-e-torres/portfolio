@@ -7,8 +7,8 @@
     ),
     url(../img/bridgeDarkMobile-1x.jpg);
 
-  @media only screen and (min-resolution: 192dpi) and (min-width: 375px),
-    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 375px) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 325px),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 325px) {
     background-image: linear-gradient(
         to right bottom,
         rgba(89, 89, 89, 0.8),

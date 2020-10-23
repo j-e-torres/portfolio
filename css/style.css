@@ -153,7 +153,7 @@ body {
       flex-direction: column;
       align-items: center; } }
   .card-container__card {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: var(--shadow-medium);
     margin-bottom: var(--margin-bottom-medium);
     flex: 0 0 25%;
@@ -574,7 +574,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 375px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 375px) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 325px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 325px) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(64, 64, 64, 0.8)), url(../img/bridgeDarkMobile-2x.jpg); } }
   @media only screen and (min-width: 600px) {
@@ -679,16 +679,13 @@ body {
 
 .section-skills {
   padding: 3rem 0;
-  background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(64, 64, 64, 0.8)), url(../img/bridgeLightMobile-1x.jpg);
+  background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(64, 64, 64, 0.8)), url(../img/bridgeLightMobile.jpg);
   background-size: cover;
   background-position: center; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 375px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 375px) {
-    .section-skills {
-      background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(64, 64, 64, 0.8)), url(../img/bridgeLightMobile-2x.jpg); } }
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 901px) {
     .section-skills {
       background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(64, 64, 64, 0.8)), url(../img/bridgeLight-1x.jpg); } }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 1024px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), only screen and (min-width: 1800px) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 901px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 901px), only screen and (min-width: 1800px) {
     .section-skills {
       background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(64, 64, 64, 0.8)), url(../img/bridgeLight-2x.jpg); } }
 

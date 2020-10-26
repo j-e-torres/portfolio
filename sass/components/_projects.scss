@@ -1,12 +1,14 @@
 .projects {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
 }
 
 .project {
-  padding: 3rem;
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-medium);
+  border-radius: 5px;
 
   display: flex;
   flex-direction: column;

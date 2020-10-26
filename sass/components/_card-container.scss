@@ -30,6 +30,7 @@
 
     @media only screen and (max-width: 475px) {
       width: 75%;
+      background-color: rgba(255, 255, 255, 0.8);
     }
 
     // &:not(:last-child) {
@@ -53,7 +54,18 @@
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.3)
         ),
-        url(../img/frontend-2.jpg);
+        url(../img/frontend-1x.jpg);
+
+      @media only screen and (min-resolution: 192dpi),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-width: 1920px) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(../img/frontend-2x.jpg);
+      }
     }
 
     &--2 {
@@ -62,7 +74,18 @@
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.3)
         ),
-        url(../img/backend.jpg);
+        url(../img/backend-1x.jpg);
+
+      @media only screen and (min-resolution: 192dpi),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-width: 1920px) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(../img/backend-2x.jpg);
+      }
     }
 
     &--3 {
@@ -71,7 +94,18 @@
           rgba(0, 0, 0, 0.3),
           rgba(0, 0, 0, 0.3)
         ),
-        url(../img/othertech.jpg);
+        url(../img/othertech-1x.jpg);
+
+      @media only screen and (min-resolution: 192dpi),
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-width: 1920px) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(../img/othertech-2x.jpg);
+      }
     }
   }
 
@@ -89,6 +123,10 @@
     left: 1rem;
     z-index: 5;
     width: 100%;
+
+    @media only screen and (max-width: 475px) {
+      font-size: 2.2rem;
+    }
   }
 
   &__card-heading-span {

@@ -108,6 +108,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 475px) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary--main {
     padding: 1.2rem 1.5rem;
     box-shadow: var(--shadow-light);
@@ -170,7 +173,8 @@ body {
         width: 65%; } }
     @media only screen and (max-width: 475px) {
       .card-container__card {
-        width: 75%; } }
+        width: 75%;
+        background-color: rgba(255, 255, 255, 0.8); } }
     .card-container__card:hover {
       transform: scale(1.05);
       background-color: white; }
@@ -179,11 +183,20 @@ body {
     height: 21rem;
     width: 100%; }
     .card-container__picture--1 {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/frontend-2.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/frontend-1x.jpg); }
+      @media only screen and (min-resolution: 192dpi), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1920px) {
+        .card-container__picture--1 {
+          background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/frontend-2x.jpg); } }
     .card-container__picture--2 {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/backend.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/backend-1x.jpg); }
+      @media only screen and (min-resolution: 192dpi), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1920px) {
+        .card-container__picture--2 {
+          background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/backend-2x.jpg); } }
     .card-container__picture--3 {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/othertech.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/othertech-1x.jpg); }
+      @media only screen and (min-resolution: 192dpi), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1920px) {
+        .card-container__picture--3 {
+          background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/othertech-2x.jpg); } }
   .card-container__card-heading {
     font-size: 2.8rem;
     text-transform: uppercase;
@@ -194,6 +207,9 @@ body {
     left: 1rem;
     z-index: 5;
     width: 100%; }
+    @media only screen and (max-width: 475px) {
+      .card-container__card-heading {
+        font-size: 2.2rem; } }
   .card-container__card-heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -373,12 +389,14 @@ body {
 
 .projects {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 2rem; }
 
 .project {
-  padding: 3rem;
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-medium);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -526,7 +544,7 @@ body {
   background-color: #fff;
   border-radius: 3px;
   margin-left: 3px;
-  padding: 0rem 0.4rem; }
+  padding: 0rem 0.2rem; }
 
 .btn__github--grey, .btn__github--grey:link, .btn__github--grey:visited {
   color: var(--color-grey-dark-1);
@@ -552,6 +570,10 @@ body {
       .social-media__icon {
         height: 3rem;
         width: 3rem; } }
+    @media only screen and (max-width: 475px) {
+      .social-media__icon {
+        height: 2rem;
+        width: 2rem; } }
     .social-media__icon:hover {
       transform: translateY(-3px); }
     .social-media__icon--default {
@@ -662,6 +684,9 @@ body {
     @media only screen and (max-width: 768px) {
       .footer__copyright {
         width: 100%; } }
+    @media only screen and (max-width: 475px) {
+      .footer__copyright {
+        font-size: 1.1rem; } }
   .footer__link:link, .footer__link:visited {
     text-decoration: none;
     color: var(--color-grey-light-1);
